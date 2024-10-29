@@ -6,6 +6,7 @@ Goals:
 - Add PDF generation?
 - Add markdown generation?
 - Add Word .docs generation?
+- Add a headshot?
 
 Ideas:
 - Branches by role?
