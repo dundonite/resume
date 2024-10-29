@@ -1,0 +1,199 @@
+{
+  "basics": {
+    "name": "Sean Dundon",
+    "label": "Vice President, Product Management",
+    "email": "sean@dundon.network",
+    "phone": "512-701-0938",
+    "location": {
+      "city": "Houston",
+      "region": "Texas",
+      "countryCode": "US"
+    },
+    "summary": "Experienced leader in product management with a strong background in software development, Linux administration, and product strategy. Proven track record of driving revenue growth, optimizing user experiences, and leading cross-functional teams in the web hosting industry.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Sean Dundon",
+        "url": "https://www.linkedin.com/in/sean-dundon/"
+      },
+      {
+        "network": "GitHub",
+        "username": "dundonite",
+        "url": "https://github.com/dundonite"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Newfold Digital",
+      "position": "Vice President, Product Management",
+      "startDate": "2022-01",
+      "endDate": "2024-08",
+      "location": "Remote (Houston, TX)",
+      "summary": "Led the product management function for web hosting products at the world's second largest web hosting provider.",
+      "highlights": [
+        "Managed the product roadmap and growth strategy for the largest hosting products.",
+        "Managed a team of product managers supporting 15 software teams and 2 systems teams.",
+        "Led the design, development, and release of a Scalable Shared hosting product, generating $2mm incremental revenue in the first year.",
+        "Developed a new revenue stream by differentiating hosting products.",
+        "Oversaw the user experience design for all complex product integrations and setup flows."
+      ]
+    },
+    {
+      "name": "Newfold Digital",
+      "position": "Director, Product Management",
+      "startDate": "2021-02",
+      "endDate": "2022-12",
+      "location": "Remote (Houston, TX)",
+      "summary": "Managed the roadmap and strategy for hosting products and infrastructure serving strategic brands.",
+      "highlights": [
+        "Led a major overhaul of hosting performance, resulting in recognition as a top-tier hosting provider.",
+        "Sponsored the creation of an internal orchestration solution, resulting in significant savings.",
+        "Oversaw technical and user experience design for various hosting products after the merger between Endurance International and Web.com."
+      ]
+    },
+    {
+      "name": "Endurance International Group",
+      "position": "Group Product Manager",
+      "startDate": "2018-02",
+      "endDate": "2021-02",
+      "location": "Remote (Houston, TX)",
+      "summary": "Managed the product function for HostGator.com, serving approximately 800,000 customers and generating $170 million in annual revenue.",
+      "highlights": [
+        "Delivered a 5pp increase in first-time monthly renewal rates, worth approximately $1mm in first-year revenue.",
+        "Built a predictable and transparent SDLC in partnership with Engineering leadership.",
+        "Turned around annual growth rate of virtualized hosting solutions from -5% to +5% YoY."
+      ]
+    },
+    {
+      "name": "Endurance International Group",
+      "position": "Director, Business Operations",
+      "startDate": "2016-06",
+      "endDate": "2018-02",
+      "location": "Houston, TX",
+      "summary": "Managed day-to-day business operations for all Texas-based hosting brands.",
+      "highlights": [
+        "Developed a cross-training program, increasing customer satisfaction by 10pp and reducing support costs by 15%.",
+        "Successfully consolidated two additional hosting brands onto the HostGator platform."
+      ]
+    },
+    {
+      "name": "Endurance International Group",
+      "position": "Director, Systems Administration",
+      "startDate": "2014-04",
+      "endDate": "2016-06",
+      "location": "Austin, TX",
+      "summary": "Managed Linux and Windows systems administration as well as the Billing and Fraud prevention teams.",
+      "highlights": [
+        "Received the Endurance CEO award for significant impact on HostGator Linux department improvements.",
+        "Implemented workforce management practices for ticket-based support."
+      ]
+    },
+    {
+      "name": "Endurance International Group",
+      "position": "Director, Technical Support",
+      "startDate": "2013-02",
+      "endDate": "2014-04",
+      "location": "Austin, TX",
+      "summary": "Led the HostGator front-line support team in Austin, achieving a 30% productivity increase and a 10-point NPS improvement.",
+      "highlights": [
+        "Implemented a new system for call center performance tracking.",
+        "Achieved a 40% reduction in frontline support costs while improving morale."
+      ]
+    },
+    {
+      "name": "HostGator.com",
+      "position": "Supervisor, Linux Systems Administration",
+      "startDate": "2012-04",
+      "endDate": "2013-02",
+      "location": "Austin, TX",
+      "summary": "Supported a team of Linux administrators in abuse, compliance, migrations, and support departments.",
+      "highlights": [
+        "Named Linux Admin of the Month, December 2011."
+      ]
+    },
+    {
+      "name": "HostGator.com",
+      "position": "Linux Administrator 1",
+      "startDate": "2011-01",
+      "endDate": "2012-04",
+      "location": "Austin, TX",
+      "summary": "Provided escalated support for customers and resolved over 12,000 support tickets.",
+      "highlights": [
+        "Named Employee of the Month, December 2011."
+      ]
+    },
+    {
+      "name": "ASportsD",
+      "position": "Cofounder",
+      "startDate": "2008-11",
+      "endDate": "2009-12",
+      "location": "Austin, TX",
+      "summary": "Cofounded a software startup providing a platform for amateur athletes to attract recruiters.",
+      "highlights": [
+        "Conducted market research to identify TAM, SAM, and SOM.",
+        "Managed a team of two software development interns."
+      ]
+    },
+    {
+      "name": "Secure Data Software",
+      "position": "Jr. Software Developer",
+      "startDate": "2005-10",
+      "endDate": "2006-12",
+      "location": "East Setauket, NY",
+      "summary": "Developed custom LOB software solutions for small and medium businesses.",
+      "highlights": [
+        "Designed database schemas and conducted business analysis.",
+        "Developed ETL processes and user interfaces."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Product Management",
+      "keywords": [
+        "Product Strategy",
+        "Product Design",
+        "User Experience Research",
+        "Roadmap Management",
+        "Team Development",
+        "Agile Software Development"
+      ]
+    },
+    {
+      "name": "Technical Skills",
+      "keywords": [
+        "Linux",
+        "Apache",
+        "MySQL",
+        "PHP",
+        "Python",
+        "SQL",
+        "Networking",
+        "Virtualization"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Cross-functional Leadership",
+        "Team Building",
+        "Career Pathing",
+        "Performance Management",
+        "Process Management"
+      ]
+    }
+  ],
+  "meta": {
+    "theme": "jsonresume-theme-even",
+    "themeOptions": {
+      "colors": {
+        "background": ["#ffffff", "#191e23"],
+        "dimmed": ["#f3f4f5", "#23282d"],
+        "primary": ["#191e23", "#fbfbfc"],
+        "secondary": ["#6c7781", "#ccd0d4"],
+        "accent": ["#0073aa", "#00a0d2"]
+      }
+    }
+  }
+}

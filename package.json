@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "init": "resumed init src/resume.json.example",
+    "validate": "resumed validate src/resume.json",
+    "json2html": "render src/resume.json -o out/resume.html"
+  },
+  "dependencies": {
+    "jsonresume-theme-even": "^0.23.0",
+    "puppeteer": "^23.6.1",
+    "resumed": "^4.0.0"
+  }
+}
