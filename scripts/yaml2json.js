@@ -1,35 +1,60 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'yaml';
-import { formatISO } from 'date-fns';
+import { execSync } from 'child_process';
 
-// Paths for input/output files
-const RESUME_YAML = path.resolve('src/resume.yml');
-const RESUME_JSON = path.resolve('out/resume.json');
+// Directories for input/output
+const SRC_DIR = path.resolve('src');
+const OUT_DIR = path.resolve('out');
+
+// Helper function to get the last commit date for a file using Git
+function getLastUpdatedDate(filePath) {
+  try {
+    // Get the last commit date for the file in ISO 8601 format
+    const gitCommand = `git log -1 --format=%aI -- "${filePath}"`;
+    const lastUpdated = execSync(gitCommand, { encoding: 'utf-8' }).trim();
+    return lastUpdated || null;
+  } catch (error) {
+    console.error(`Error getting last updated date for ${filePath}:`, error);
+    return null;
+  }
+}
 
 try {
-  // Check if the YAML resume file exists
-  if (!fs.existsSync(RESUME_YAML)) {
-    console.error(`Error: ${RESUME_YAML} not found!`);
+  // Check if the source directory exists
+  if (!fs.existsSync(SRC_DIR)) {
+    console.error(`Error: ${SRC_DIR} not found!`);
     process.exit(1);
   }
 
-  // Read and parse the YAML file
-  const yamlContent = fs.readFileSync(RESUME_YAML, 'utf8');
-  const resumeData = yaml.parse(yamlContent);
-
-  // Add/update the lastUpdated field with the current datetime in ISO 8601 format
-  resumeData.meta = resumeData.meta || {};
-  resumeData.meta.properties = resumeData.meta.properties || {};
-  resumeData.meta.properties.lastUpdated = formatISO(new Date());
-
-  // Write the updated JSON content to the output file
-  if (!fs.existsSync('out')) {
-    fs.mkdirSync('out');
+  // Create output directory if it doesn't exist
+  if (!fs.existsSync(OUT_DIR)) {
+    fs.mkdirSync(OUT_DIR);
   }
-  fs.writeFileSync(RESUME_JSON, JSON.stringify(resumeData, null, 2));
 
-  console.log(`Successfully converted ${RESUME_YAML} to ${RESUME_JSON}`);
+  // Get all YAML files in the source directory
+  const yamlFiles = fs.readdirSync(SRC_DIR).filter(file => file.endsWith('.yml'));
+
+  // Convert each YAML file to JSON
+  yamlFiles.forEach(file => {
+    const baseName = path.basename(file, '.yml');
+    const yamlPath = path.join(SRC_DIR, file);
+    const jsonPath = path.join(OUT_DIR, `${baseName}.json`);
+
+    // Read and parse the YAML file
+    const yamlContent = fs.readFileSync(yamlPath, 'utf8');
+    const resumeData = yaml.parse(yamlContent);
+
+    // Add/update the lastUpdated field using Git metadata
+    const lastUpdated = getLastUpdatedDate(yamlPath) || new Date().toISOString();
+    resumeData.meta = resumeData.meta || {};
+    resumeData.meta.properties = resumeData.meta.properties || {};
+    resumeData.meta.properties.lastUpdated = lastUpdated;
+
+    // Write the updated JSON content to the output file
+    fs.writeFileSync(jsonPath, JSON.stringify(resumeData, null, 2));
+    console.log(`Successfully converted ${file} to ${baseName}.json`);
+  });
 } catch (error) {
   console.error('Error during YAML to JSON conversion:', error);
   process.exit(1);
