@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "jsonresume-theme-local": "file:./theme",
+    "resumed": "^4.0.0",
+    "yaml": "^2.6.1"
+  },
+  "scripts": {
+    "yaml2json": "node scripts/yaml2json.js",
+    "validate": "resumed validate out/resume.json",
+    "render": "resumed --theme jsonresume-theme-local --output out/index.html out/resume.json",
+    "build": "npm run yaml2json && npm run validate && npm run render"
+  }
+}
