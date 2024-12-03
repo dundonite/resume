@@ -1,0 +1,119 @@
+meta:
+  properties:
+    canonical: https://resume.sean.dundon.network/resume.json
+    lastUpdated: "2024-11-29T21:59:30Z"
+    image: https://github.com/dundonite/resume/blob/main/image.jpg?raw=true
+basics:
+  name: Sean Dundon
+  label: Technical Product Leader
+  summary:
+    Product leader with extensive experience in managing SaaS products,
+    integrating technical solutions, and scaling global platforms.
+    Proven track record of driving developer-focused product strategy,
+    cross-functional collaboration, and team leadership to deliver
+    measurable business growth.
+  email: sean@dundon.network
+  phone: 512-701-0938
+  location:
+    city: Houston
+    region: Texas
+    countryCode: US
+  profiles:
+    - network: LinkedIn
+      username: Sean Dundon
+      url: https://www.linkedin.com/in/sean-dundon/
+    - network: GitHub
+      username: dundonite
+      url: https://github.com/dundonite
+
+work:
+  - name: Newfold Digital
+    description: Global provider of digital presence solutions for small-to-medium businesses.
+    position: Vice President, Product Management
+    startDate: 2023-01
+    endDate: 2024-08
+    location: Remote (Houston, TX)
+    summary:
+      Led the product management function for large-scale digital solutions,
+      delivering measurable growth through global market alignment,
+      platform modernization, and cross-functional collaboration.
+    highlights:
+      - Directed end-to-end modernization of hosting platforms, delivering $2MM incremental revenue in one year through innovative resource-tiering strategies.
+      - Unified technical and design standards across departments post-merger, driving improved customer retention and usability.
+      - Defined global product strategy, tailoring solutions for diverse regional markets, and aligning with corporate goals.
+
+  - name: Newfold Digital
+    position: Director, Technical Product Management
+    startDate: 2021-05
+    endDate: 2023-01
+    location: Remote (Houston, TX)
+    summary:
+      Delivered scalable solutions, reduced churn, and streamlined operations
+      through innovative technical product strategies and cross-functional leadership.
+    highlights:
+      - Spearheaded a post-merger consolidation of over two million subscribers, reducing 2,000 SKUs to fewer than 50 and achieving operational scalability.
+      - Championed adoption of an internally developed orchestration solution, saving millions in costs while improving platform reliability.
+      - Designed internal tools enhancing observability and reliability across platforms.
+
+  - name: Endurance International Group
+    position: Group Product Manager, HostGator
+    startDate: 2018-04
+    endDate: 2021-05
+    location: Remote (Houston, TX)
+    summary:
+      Defined product roadmaps and executed strategies to grow SaaS offerings
+      for 800,000+ customers, enhancing customer retention and driving revenue.
+    highlights:
+      - Improved first-time renewal rates by 5pp, adding $1MM annual revenue by streamlining onboarding workflows and reducing customer friction.
+      - Reversed a -2% decline in hosting solutions, achieving +5% YoY growth by addressing product-market fit through targeted feature investments.
+      - Elevated team delivery cadence and morale by implementing Agile methodologies, improving software quality and customer satisfaction.
+
+  - name: Endurance International Group
+    position: Director, Business Operations
+    startDate: 2016-06
+    endDate: 2018-04
+    location: Houston, TX
+    summary:
+      Oversaw operations across systems administration, billing, and fraud prevention, achieving significant cost reductions and operational efficiency.
+    highlights:
+      - Executed a fraud remediation plan, achieving Visa compliance and avoiding fines while enhancing payment success rates.
+      - Reduced operational costs by 15% without compromising service quality through process optimization and targeted training.
+
+education:
+  - description: "Houston Community College (In Progress)"
+    area: "Computer Science"
+    studyType: "Associate"
+    startDate: "2023-01"
+    endDate: "2025-12"
+  - description: "University of Texas at Austin (Incomplete)"
+    area: "Aerospace Engineering"
+    studyType: "Bachelor"
+    startDate: "2004-08"
+    endDate: "2005-05"
+
+certificates:
+  - name: Certified Scrum Product Owner
+    date: "2020-02-06"
+    url: https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner
+    issuer: Scrum Alliance
+
+awards:
+  - title: Bluehost Recognized as Top Tier Hosting Under $25
+    date: 2023-08
+    awarder: Review Signal
+    summary: Achieved Top Tier recognition in a third-party assessment for performance improvements in hosting reliability.
+  - title: Shackleton Award
+    date: 2014-12
+    awarder: Endurance International Group
+    summary: Recognized for exceptional contributions to team and operational integration.
+
+publications:
+  - name: "Bluehost: Delivering the Fastest Web Hosting for WordPress"
+    publisher: Bluehost.com
+    url: https://www.bluehost.com/blog/bluehost-delivering-the-fastest-web-hosting-for-wordpress/
+    releaseDate: "2023-08-24"
+    summary: Detailed improvements in hosting performance and reliability.
+
+languages:
+  - language: English
+    fluency: Fluent

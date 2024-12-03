@@ -184,93 +184,112 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
         <div class="contact-item">
           ${svgIcons.telephone}<a href="tel:${basics.phone}">${basics.phone}</a>
         </div>
-        ${basics.profiles.map(profile => `
+        ${basics.profiles?.map(profile => `
           <div class="contact-item">
             ${svgIcons[profile.network.toLowerCase()] || ''}<a href="${profile.url}" target="_blank">${profile.username}</a>
           </div>
-        `).join('')}
+        `).join('') || ''}
       </div>
     </header>
 
-    <section>
-      <h2>Experience</h2>
-      ${work.map(job => `
-        <div class="entry-header">
-          <div class="entry-title">${job.position} - ${job.name}</div>
-          <div class="entry-dates">${formatDate(job.startDate)} — ${formatDate(job.endDate)}</div>
-        </div>
-        <p>${renderMarkdown(job.summary)}</p>
-        <ul>${job.highlights.map(highlight => `<li>${highlight}</li>`).join('')}</ul>
-      `).join('')}
-    </section>
+    ${work?.length ? `
+        <section>
+          <h2>Experience</h2>
+          ${work.map(job => `
+            <div class="entry-header">
+              <div class="entry-title">${job.position} - ${job.name}</div>
+              <div class="entry-dates">${formatDate(job.startDate)} — ${formatDate(job.endDate)}</div>
+            </div>
+            <p>${renderMarkdown(job.summary)}</p>
+            ${job.highlights?.length ? `
+              <ul>
+                ${job.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+              </ul>
+            ` : ''}
+          `).join('')}
+        </section>
+      ` : ''}
+      
 
-    <section>
-      <h2>Education</h2>
-      ${education.map(edu => `
-        <div class="entry-header">
-          <div class="entry-title">${edu.description}</div>
-          <div class="entry-dates">${formatDate(edu.startDate)} — ${formatDate(edu.endDate)}</div>
-        </div>
-        <p class="entry-details">${edu.studyType} in ${edu.area}</p>
-      `).join('')}
-    </section>
-
-    <section>
-      <h2>Certificates</h2>
-      ${certificates.map(cert => `
-        <article>
+    ${education?.length ? `
+      <section>
+        <h2>Education</h2>
+        ${education.map(edu => `
           <div class="entry-header">
-            <div class="entry-title">${cert.name}</div>
-            <div class="entry-dates">${formatDate(cert.date)}</div>
+            <div class="entry-title">${edu.description}</div>
+            <div class="entry-dates">${formatDate(edu.startDate)} — ${formatDate(edu.endDate)}</div>
           </div>
-          <p class="meta">${cert.issuer}</p>
-        </article>
-      `).join('')}
-    </section>
+          <p class="entry-details">${edu.studyType} in ${edu.area}</p>
+        `).join('')}
+      </section>
+    ` : ''}
 
-    <section>
-      <h2>Awards</h2>
-      ${awards.map(award => `
-        <article>
-          <div class="entry-header">
-            <div class="entry-title">${award.title}</div>
-            <div class="entry-dates">${formatDate(award.date)}</div>
-          </div>
-          <p class="meta">${award.awarder}</p>
-          <p>${renderMarkdown(award.summary)}</p>
-        </article>
-      `).join('')}
-    </section>
+    ${certificates?.length ? `
+      <section>
+        <h2>Certificates</h2>
+        ${certificates.map(cert => `
+          <article>
+            <div class="entry-header">
+              <div class="entry-title">${cert.name}</div>
+              <div class="entry-dates">${formatDate(cert.date)}</div>
+            </div>
+            <p class="meta">${cert.issuer}</p>
+          </article>
+        `).join('')}
+      </section>
+    ` : ''}
 
-    <section>
-      <h2>Publications</h2>
-      ${publications.map(pub => `
-        <article>
-          <div class="entry-header">
-            <div class="entry-title">${pub.name}</div>
-            <div class="entry-dates">${formatDate(pub.releaseDate)}</div>
-          </div>
-          <p class="meta">${pub.publisher}</p>
-          <p>${renderMarkdown(pub.summary)}</p>
-          <a href="${pub.url}" target="_blank">Read more</a>
-        </article>
-      `).join('')}
-    </section>
+    ${awards?.length ? `
+      <section>
+        <h2>Awards</h2>
+        ${awards.map(award => `
+          <article>
+            <div class="entry-header">
+              <div class="entry-title">${award.title}</div>
+              <div class="entry-dates">${formatDate(award.date)}</div>
+            </div>
+            <p class="meta">${award.awarder}</p>
+            <p>${renderMarkdown(award.summary)}</p>
+          </article>
+        `).join('')}
+      </section>
+    ` : ''}
 
-    <section>
-      <h2>Skills</h2>
-      ${skills.map(skill => `
-        <article>
-          <h3>${skill.name}</h3>
-          <ul>${skill.keywords.map(keyword => `<li>${keyword}</li>`).join('')}</ul>
-        </article>
-      `).join('')}
-    </section>
+    ${publications?.length ? `
+      <section>
+        <h2>Publications</h2>
+        ${publications.map(pub => `
+          <article>
+            <div class="entry-header">
+              <div class="entry-title">${pub.name}</div>
+              <div class="entry-dates">${formatDate(pub.releaseDate)}</div>
+            </div>
+            <p class="meta">${pub.publisher}</p>
+            <p>${renderMarkdown(pub.summary)}</p>
+            <a href="${pub.url}" target="_blank">Read more</a>
+          </article>
+        `).join('')}
+      </section>
+    ` : ''}
 
-    <section>
-      <h2>Languages</h2>
-      <ul>${languages.map(lang => `<li>${lang.language} (${lang.fluency})</li>`).join('')}</ul>
-    </section>
+    ${skills?.length ? `
+      <section>
+        <h2>Skills</h2>
+        ${skills.map(skill => `
+          <article>
+            <h3>${skill.name}</h3>
+            <ul>${skill.keywords.map(keyword => `<li>${keyword}</li>`).join('')}</ul>
+          </article>
+        `).join('')}
+      </section>
+    ` : ''}
+
+    ${languages?.length ? `
+      <section>
+        <h2>Languages</h2>
+        <ul>${languages.map(lang => `<li>${lang.language} (${lang.fluency})</li>`).join('')}</ul>
+      </section>
+    ` : ''}
   </div>
 </body>
 </html>
