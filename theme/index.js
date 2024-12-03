@@ -18,7 +18,9 @@ const svgIcons = {
     location: readSVG('location.svg'),
     email: readSVG('email.svg'),
     telephone: readSVG('telephone.svg'),
-    linkedin: readSVG('linkedin.svg')
+    linkedin: readSVG('linkedin.svg'),
+    github: readSVG('github.svg'),
+    chess: readSVG('chess.svg')
 };
 const formatDate = (isoDate) => {
   if (!isoDate) return ''; // Handle empty or undefined dates
@@ -45,7 +47,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
 
       .container {
           max-width: 800px;
-          margin: 20px auto;
+          margin: 2em auto;
           padding: 0 20px;
       }
 
@@ -61,7 +63,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
 
       h2 {
           font-size: 1.2rem;
-          margin-top: 25px;
+          margin-top: .5em;
           border-bottom: 2px solid #ddd;
           padding-bottom: 5px;
       }
@@ -90,7 +92,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
 
       .header, .footer {
           text-align: center;
-          margin-bottom: 15px;
+          margin-bottom: .5em;
       }
 
       .header a {
@@ -98,12 +100,16 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
           color: #007BFF;
       }
 
+      .header p {
+          margin-bottom: .5em;
+      }
+
           /* Ensure contact details are displayed inline and wrap gracefully */
     .contact-details {
-        font-size: 1em;
+        font-size: .9em;
         display: flex; /* Use flexbox for alignment */
         flex-wrap: wrap; /* Allow wrapping when necessary */
-        gap: 1em; /* Add spacing between items */
+        gap: 0 .9em; /* Add spacing between items */
         align-items: center; /* Vertically align items */
         justify-content: center;
         text-align: center;
@@ -116,7 +122,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
     }
 
     .contact-item svg {
-        height: 1em; /* Match text height */
+        height: .9em; /* Match text height */
         width: auto; /* Maintain aspect ratio */
         vertical-align: middle; /* Align with text */
         margin-right: 0.5em; /* Add space between icon and text */
@@ -126,7 +132,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
       .summary {
           text-align: left;
           font-size: 0.9em;
-          margin-top: 15px;
+          margin-top: .5em;
       }
 
       .meta {
@@ -139,7 +145,7 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
           display: flex;
           justify-content: space-between;
           align-items: baseline;
-          margin-bottom: 15px;
+          margin-bottom: .5em;
       }
 
       .job-title {
@@ -182,8 +188,14 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
       /* Print-specific styles */
       @media print {
           @page {
-              margin: 1in 0.75in;
+              margin: .5in 0.5in;
           }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0;
+            }
       }
     </style>
 
@@ -209,8 +221,8 @@ exports.render = ({ basics, work, skills, certificates, awards, languages, publi
                 </div>
                 ${basics.profiles.map(profile => `
                     <div class="contact-item">
-                        ${svgIcons.linkedin}
-                        <a href="${profile.url}" target="_blank" alt="LinkedIn Profile">${profile.network}: ${profile.username}</a>
+                        ${svgIcons[profile.network.toLowerCase()] || ''}
+                        <a href="${profile.url}" target="_blank" alt="${profile.network} Profile">${profile.username}</a>
                     </div>
                 `).join('')}
             </div>

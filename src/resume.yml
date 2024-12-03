@@ -24,12 +24,12 @@ basics:
     - network: LinkedIn
       username: Sean Dundon
       url: https://www.linkedin.com/in/sean-dundon/
-#  - network: GitHub
-#    username: dundonite
-#    url: https://github.com/dundonite
-#  - network: Chess.com
-#    username: dundonite
-#    url: https://www.chess.com/member/dundonite
+    - network: GitHub
+      username: dundonite
+      url: https://github.com/dundonite
+    - network: Chess
+      username: dundonite
+      url: https://www.chess.com/member/dundonite
 #  - network: Credly
 #    username: sean-dundon
 #    url: https://www.credly.com/users/sean-dundon
