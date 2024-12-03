@@ -27,12 +27,12 @@ basics:
     - network: GitHub
       username: dundonite
       url: https://github.com/dundonite
-    - network: Chess
-      username: dundonite
-      url: https://www.chess.com/member/dundonite
-#  - network: Credly
-#    username: sean-dundon
-#    url: https://www.credly.com/users/sean-dundon
+#    - network: Chess
+#      username: dundonite
+#      url: https://www.chess.com/member/dundonite
+#    - network: Credly
+#      username: sean-dundon
+#      url: https://www.credly.com/users/sean-dundon
 work:
 
   - name: Newfold Digital
@@ -47,7 +47,7 @@ work:
       Led the product management function for large-scale digital solutions,
       delivering measurable growth through strategic alignment and global market
       adaptation. Building on operational improvements achieved during my tenure
-      as Director, I drove initiatives including a generational platform
+      as Director, Drove initiatives including a generational platform
       modernization and cross-functional process alignment. After completing
       these milestones, I sought new challenges to apply my skills to a
       different problem space.
@@ -399,7 +399,7 @@ work:
     description:
       ASportsD was an early-stage start-up designed to help amateur athletes
       showcase their achievements and attract scholarships or sponsorships. With
-      limited funding, I spearheaded product development, leveraging user
+      limited funding, spearheaded product development, leveraging user
       feedback to build a social media platform in an MVC framework. While the
       business closed before launch due to competitive pressures, it provided
       invaluable experience in discovering product/market fit, rapid
@@ -562,9 +562,7 @@ awards:
     date: 2023-08
     awarder: Review Signal
     summary:
-      After previous unsuccesful attempts, under my leadership we were able to
-      achieve [Top Tier](https://wphostingbenchmarks.com/company/bluehost/)
-      status in an objective third-party assessment, in the very difficult
+      For the first time Bluehost successfully met all requirements for [Top Tier](https://wphostingbenchmarks.com/company/bluehost/) recognition in an objective third-party assessment, in the difficult
       budget category.
   - title: Shackleton Award
     date: 2014-12
@@ -600,19 +598,17 @@ publications:
     summary: A summary of Bluehost's evolution in hosting performance.
 education:
   - description: "Houston Community College (In Progress)"
-    url: "https://catalog.hccs.edu/preview_program.php?catoid=1&poid=54&returnto=38"
     area: "Computer Science"
     studyType: "Associate"
     startDate: "2023-01"
     endDate: "2025-12"
   - description: "University of Texas at Austin (Incomplete)"
-    url: "https://www.utexas.edu"
     area: "Aerospace Engineering"
     studyType: "Bachelor"
     startDate: "2004-08"
     endDate: "2005-05"
   - description: "Northbrook High School"
-    url: "https://nhs.springbranchisd.com/home"
+    area: "Honors Studies"
     studyType: "Diploma"
     startDate: "2000-08"
     endDate: "2004-05"

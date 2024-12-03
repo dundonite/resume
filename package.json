@@ -4,6 +4,7 @@
   "dependencies": {
     "date-fns": "^4.1.0",
     "jsonresume-theme-local": "file:./theme",
+    "marked": "^15.0.3",
     "resumed": "^4.0.0",
     "yaml": "^2.6.1"
   },
