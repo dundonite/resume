@@ -598,3 +598,21 @@ publications:
     url: https://www.bluehost.com/blog/bluehost-delivering-the-fastest-web-hosting-for-wordpress/
     releaseDate: "2023-08-24"
     summary: A summary of Bluehost's evolution in hosting performance.
+education:
+  - description: "Houston Community College (In Progress)"
+    url: "https://catalog.hccs.edu/preview_program.php?catoid=1&poid=54&returnto=38"
+    area: "Computer Science"
+    studyType: "Associate"
+    startDate: "2023-01"
+    endDate: "2025-12"
+  - description: "University of Texas at Austin (Incomplete)"
+    url: "https://www.utexas.edu"
+    area: "Aerospace Engineering"
+    studyType: "Bachelor"
+    startDate: "2004-08"
+    endDate: "2005-05"
+  - description: "Northbrook High School"
+    url: "https://nhs.springbranchisd.com/home"
+    studyType: "Diploma"
+    startDate: "2000-08"
+    endDate: "2004-05"
