@@ -13,6 +13,7 @@
     "yaml2json": "node scripts/yaml2json.js",
     "validate": "find out -name '*.json' -exec resumed validate {} \\;",
     "render": "find out -name '*.json' -exec bash -c 'resumed --theme jsonresume-theme-local --output ${0%.json}.html $0' {} \\;",
-    "build": "npm run abridge && npm run yaml2json && npm run validate && npm run render"
+    "debridge": "rm src/index.yml",
+    "build": "npm run abridge && npm run yaml2json && npm run validate && npm run render && npm run debridge"
   }
 }
