@@ -228,11 +228,6 @@ work:
     startDate: 2012-04
     endDate: 2013-02
     location: Austin, TX
-    summary: Led a team of L1 and L2 Linux administrators, providing technical
-      oversight, team development, and process improvements to ensure
-      high-quality customer support. Balanced technical responsibilities with
-      managerial duties, fostering a collaborative and customer-focused team
-      environment.
     skills:
       - Team Leadership
       - Coaching and Development
@@ -257,10 +252,6 @@ work:
     startDate: 2011-01
     endDate: 2012-04
     location: Austin, TX
-    summary: Provided root-level support for dedicated and VPS hosting customers,
-      troubleshooting complex server issues and resolving escalated technical
-      problems. Recognized for exceptional customer focus, technical aptitude,
-      and strong first-contact resolution rates.
     skills:
       - Linux Administration
       - Customer Support
@@ -274,59 +265,6 @@ work:
       - cPanel
       - Bash
       - First Contact Resolution
-  - name: ASportsD
-    description: ASportsD was an early-stage start-up designed to help amateur
-      athletes showcase their achievements and attract scholarships or
-      sponsorships. With limited funding, spearheaded product development,
-      leveraging user feedback to build a social media platform in an MVC
-      framework. While the business closed before launch due to competitive
-      pressures, it provided invaluable experience in discovering product/market
-      fit, rapid prototyping, and overcoming early-stage start-up challenges.
-    position: Cofounder, Lead Developer
-    startDate: 2008-11
-    endDate: 2009-12
-    location: Austin, TX
-    summary: Led the development of an early-stage social media platform for amateur
-      athletes, managing product design, development, and a small team. Gained
-      hands-on experience in MVP development, user research, and iterative
-      software delivery under tight constraints.
-    skills:
-      - MVP Development
-      - Product/Market Fit Analysis
-      - User Research and Interviews
-      - Team Management
-      - Database Design
-      - Web Application Development
-      - Symfony
-      - PHP
-      - jQuery
-  - name: Secure Data Software
-    description: SDS delivered customized software solutions for small and medium
-      businesses, modernizing operations by transitioning from legacy systems to
-      efficient, scalable platforms. The proprietary tool automated database
-      design and interface generation, reducing implementation time while
-      ensuring robust enforcement of business rules.
-    position: Jr. Software Developer
-    startDate: 2005-10
-    endDate: 2006-12
-    location: East Setauket, NY
-    summary: Collaborated with business owners and managers to analyze and document
-      business processes, translating them into detailed specifications for a
-      proprietary system that automated workflows and enforced business rules.
-      Designed and implemented database schemas, developed custom user
-      interfaces, and executed complex data migrations. Delivered
-      technology-driven solutions to optimize operations, streamline workflows,
-      and support business growth.
-    skills:
-      - Process Analysis
-      - Requirements Gathering
-      - Stakeholder Management
-      - Database Design
-      - Data Migration (ETL)
-      - Business Process Optimization
-      - Problem-Solving
-      - PostgreSQL
-      - Workflow Automation
 certificates:
   - name: "Pragmatic Institute: Focus"
     date: 2020-12-17
@@ -346,8 +284,3 @@ education:
     studyType: Associate
     startDate: 2023-01
     endDate: 2025-12
-  - description: University of Texas at Austin (Incomplete)
-    area: Aerospace Engineering
-    studyType: Bachelor
-    startDate: 2004-08
-    endDate: 2005-05

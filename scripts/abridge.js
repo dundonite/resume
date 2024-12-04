@@ -5,6 +5,7 @@ import yaml from 'yaml';
 // Input and output file paths
 const INPUT_FILE = path.resolve('src/index.yml');
 const OUTPUT_FILE = path.resolve('src/abridged.yml');
+const currentYear = new Date().getFullYear();
 
 try {
   // Check if the input file exists
@@ -23,18 +24,36 @@ try {
   delete resumeData.publications;
   delete resumeData.awards;
 
-  // Remove high school
-  if (Array.isArray(resumeData.education) && resumeData.education.length > 2) {
-    delete resumeData.education[2];
-    resumeData.education = resumeData.education.filter(Boolean); // Remove undefined entries
+  // Retain only the first entry in education
+  if (Array.isArray(resumeData.education) && resumeData.education.length > 1) {
+    resumeData.education = resumeData.education.slice(0, 1); // Keep only the first entry
   }
 
   // Remove 'highlights' from work entries beyond the first three
   if (Array.isArray(resumeData.work)) {
-    resumeData.work.forEach((entry, index) => {
-      if (index >= 3 && entry.highlights) {
-        delete entry.highlights; // Remove highlights from entries beyond the first three
+    resumeData.work = resumeData.work.filter((entry, index) => {
+      // Remove work entries older than 15 years
+      if (entry.endDate) {
+        const endYear = parseInt(entry.endDate.split('-')[0], 10);
+        if (currentYear - endYear > 12) {
+          return false; // Filter out this entry
+        }
       }
+
+      // Remove highlights from entries beyond the first three
+      if (index >= 3 && entry.highlights) {
+        delete entry.highlights;
+      }
+
+      // Remove summary from work items that ended more than 10 years ago
+      if (entry.endDate) {
+        const endYear = parseInt(entry.endDate.split('-')[0], 10);
+        if (currentYear - endYear > 10 && entry.summary) {
+          delete entry.summary;
+        }
+      }
+
+      return true; // Keep this entry
     });
   }
 
