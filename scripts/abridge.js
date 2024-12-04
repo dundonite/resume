@@ -3,8 +3,8 @@ import path from 'path';
 import yaml from 'yaml';
 
 // Input and output file paths
-const INPUT_FILE = path.resolve('src/index.yml');
-const OUTPUT_FILE = path.resolve('src/abridged.yml');
+const INPUT_FILE = path.resolve('src/exhaustive.yml');
+const OUTPUT_FILE = path.resolve('src/index.yml');
 const currentYear = new Date().getFullYear();
 
 try {
