@@ -95,9 +95,10 @@ work:
       - Redefined platform performance standards using data-driven testing
         frameworks, reversing customer retention issues and earning 'Top Tier'
         industry recognition.
-      - Directed post-merger platform consolidation of over two million
+      - Assisted in leading the post-merger platform consolidation of over two million
         subscribers, streamlining 2,000 SKUs into fewer than 50 across three
         core offerings while achieving significant economies of scale.
+      - Leveraged DataDog Real User Monitoring (RUM) and Session Replay to quickly identify and resolve customer-facing issues.
       - Championed a strategic pivot to abandon a failing platform rebuild,
         adopting a scalable orchestration solution that delivered millions in
         cost savings and improved reliability.
@@ -459,7 +460,7 @@ work:
     highlights:
       - Designed and implemented normalized database schemas and information
         architectures to enforce business rules, enable scalability, and
-        streamline complex workflows.
+        streamline complex workflows. Developed Entity Relationship and UML diagrams to document and communicate data structures and processes.
       - Led successful legacy system migrations by reverse engineering data
         structures and developing ETL scripts, preserving critical business data
         across multiple projects.
