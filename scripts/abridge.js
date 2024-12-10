@@ -29,7 +29,6 @@ try {
     resumeData.education = resumeData.education.slice(0, 1); // Keep only the first entry
   }
 
-  // Remove 'highlights' from work entries beyond the first three
   if (Array.isArray(resumeData.work)) {
     resumeData.work = resumeData.work.filter((entry, index) => {
       // Remove work entries older than 15 years
@@ -38,6 +37,11 @@ try {
         if (currentYear - endYear > 12) {
           return false; // Filter out this entry
         }
+      }
+      
+      // Remove skills from roles
+      if (entry.skills) {
+        delete entry.skills
       }
 
       // Remove highlights from entries beyond the first three
